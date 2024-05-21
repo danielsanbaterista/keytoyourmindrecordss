@@ -1,4 +1,4 @@
-www.keytoyourmindrecords.com
+
 git add CNAME
-git commit -m "Add custom domain"
+git commit -m "www.keytoyourmindrecords.com"
 git push origin main
