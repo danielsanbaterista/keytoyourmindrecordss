@@ -1,0 +1,302 @@
+
+<!doctype html><html translate="no" lang="es"><head><script>window.prerenderReady = false;</script><script>window.accessPoint = "WEB";
+
+    function fromAppNative() {
+      window.accessPoint = "APP";
+      console.log('welcome', window.accessPoint)
+      setTimeout(() => {
+        window.accessPoint = "APP";
+        console.log('timeout', window.accessPoint)
+        return window.accessPoint || 'success'
+      }, 10000);
+      return window.accessPoint || 'callled'
+    }</script><link href="https://fonts.googleapis.com" rel="dns-prefetch"/><link href="//securepubads.g.doubleclick.net" rel="dns-prefetch"><link href="//www.googletagmanager.com" rel="dns-prefetch"><link href="//www.google-analytics.com" rel="dns-prefetch"><link href="//ik.imagekit.io" rel="dns-prefetch"><link href="//analytics.tiktok.com" rel="dns-prefetch"><link href="//googleadservices.com" rel="dns-prefetch"><link href="//configusa.veinteractive.com" rel="dns-prefetch"><base href="/"/><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5"/><script src="cookies.js" async></script><script>window.dataLayer = [];
+        window.gtag = (a, b, c) => window.dataLayer.push([a, b, c]);</script><link rel="icon" href="https://www.makro.com.co/images/favicon.ico" type="image/png"/><meta name="google" content="notranslate"/><title>Makro Tienda Online | Inicio</title><link rel="preload" href="https://ecommerce-image-catalog.s3.amazonaws.com/Manuel+leon/Makro/Logo_7230/Logo+tienda.makro.png" as="image"/><link href="cart.png" as="image"/><link as="style" rel="stylesheet preload prefetch" href="https://fonts.googleapis.com/css?family=Nunito&display=swap" crossorigin="anonymous"/><style>/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+* {
+  font-family: var(--typography-type-primary);
+}
+body {
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: none;
+  background: #fafafa;
+}</style><style>*{--color-primary: #E11F1D;--color-primary-hover: #E11F1DCC;--color-primary-opacity-ten:#E11F1D1A;--color-primary-checked: #E11F1D0A;--color-primary2: #D22730;--color-crossed-color-price:var(--color-black2);--app-universal-bar-background:#333;--app-brand-logo-background-active:#ffffff4f;--app-brand-logo-background-hover:#ffffff24;--app-background-mobile:var(--background-app);--app-background-desktop:var(--background-app);--app-header-background-mobile:#D22730;--app-header-background-desktop:#D22730;--app-footer-background-desktop:#D22730;--app-footer-background-mobile:#D22730;--product-minQty-color:var(--color-black1);--product-nxp-backgroundColor:var(--color-black);--product-nxp-color:var(--color-offWhite);--product-special-price-color:#E11F1D;--product-price-color:#E11F1D;--app-header-background:var(--color-primary);--app-subheader-background-desktop:var(--color-offWhite);--app-subheader-background-mobile:var(--color-offWhite);--app-subheader-color-mobile:var(--color-black);--app-subheader-color-desktop:var(--color-black);--app-header-fontsize-s1:13px;--app-header-fontsize-s2:14px;--app-header-fontsize-s3:16px;--app-subheader-fontsize-s1:13px;--app-subheader-fontsize-s2:14px;--app-subheader-fontsize-s3:16px;--app-location-font-color-mobile:var(--color-black);--app-location-font-color-desktop:var(--color-black);--app-location-icon-color-mobile:#E11F1D;--app-location-icon-color-desktop:#E11F1D;--cart-detail-card-product-small-width: 312px;--header-height: 72px;--header-height-small: 116px;--header-height-category-small: 56px;--showcase-subheader-height: 182px;--z-index-9: 9;--z-index-10: 10;--z-index-11: 11;--z-index-12: 12;--container-max-width-default: 1280px;--container-max-width-large: 1280px;--container-max-width-medium: 960px;--container-max-width-small: 460px;--container-border-padding: 40px;--container-border-padding-mobile: 10px;--app-header-background-mobile-v3:var(--color-primary);--app-header-background-desktop-v3:var(--color-primary);--app-header-color-mobile-v3:var(--color-offWhite);--app-header-color-desktop-v3:var(--color-offWhite);--app-subheader-background-mobile-v3:var(--color-offWhite);--app-subheader-background-desktop-v3:var(--color-offWhite);--app-subheader-color-mobile-v3:var(--color-black);--app-subheader-color-desktop-v3:var(--color-black);--app-header-overlay-desktop-v3:linear-gradient( 0deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.25) 100% );--typography-type-primary:"Nunito", sans-serif;}</style><style data-skeleton="prod v2">.skeleton.main-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.skeleton.header.v3 {
+  width: 100vw;
+  z-index: var(--z-index-9);
+  box-shadow: var(--shadow-boxShadow);
+  display: grid;
+  grid-template-areas:
+    'main'
+    'secondary';
+  grid-template-rows: 94px 40px;
+
+}
+
+.skeleton.header.v3 .header__main {
+  grid-area: main;
+  background-color: var(--app-header-background-desktop-v3, #ccc);
+  padding: 0px 32px;
+  display: grid;
+  gap: var(--spacing-margin-medium);
+  grid-template-areas: 'logo categoryTree search icons account';
+  grid-template-columns: auto minmax(150px, max-content) 1fr auto minmax(150px, max-content);
+  align-items: center;
+}
+
+.skeleton.header.v3 .header__secondary {
+  grid-area: secondary;
+  background-color: var(--app-subheader-background-desktop-v3, var(--app-subheader-background-desktop));
+  padding: 8px 32px;
+  display: grid;
+  gap: var(--spacing-margin-medium);
+  grid-template-areas: 'opModel customPages helper';
+  grid-template-columns: minmax(150px, max-content) minmax(150px, 1fr) minmax(100px, max-content);
+}
+
+.skeleton.header.v3 .header__logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  max-height: 60px;
+  aspect-ratio: 205/110;
+  grid-area: logo;
+  max-width: 200px;
+  min-width: 100px;
+}
+
+.skeleton.header.v3 .header__logo>img{
+  width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 960px) {
+  .skeleton.header.v3 .header__main {
+    padding: 0px 16px;
+    gap: var(--spacing-margin-xSmall);
+    grid-template-columns: auto auto 1fr auto minmax(auto, max-content);
+	}
+  .skeleton.header.v3 .header__secondary {
+    padding: 0px 16px;
+    gap: var(--spacing-margin-xSmall);
+	}
+}
+
+
+@media screen and (max-width: 576px) {
+  .skeleton.header.v3{
+    display: grid;
+    grid-template-areas:
+      'main'
+      'secondary';
+    grid-template-rows: 66px 36px;
+  }
+
+  .skeleton.header.v3 .header__main{
+    grid-area: main;
+      background-color: var(
+        --app-header-background-mobile-v3,
+        var(--app-header-background-mobile)
+      );
+      padding: 18px;
+      display: grid;
+      gap: 16px;
+      grid-template-areas: 'categoryTree logo icons';
+      grid-template-columns: 30px 1fr auto;
+      align-items: center;
+      text-align: center;
+  }
+
+  .skeleton.header.v3 .header__secondary{
+    grid-area: secondary;
+      background-color: var(
+        --app-subheader-background-mobile-v3,
+        var(--app-subheader-background-mobile)
+      );
+      display: grid;
+      grid-template-areas: 'opModel moreAbout';
+      justify-content: space-between;
+  }
+
+  .skeleton.header.v3 .header__logo{
+    max-height: 30px;
+    min-width: auto;
+    max-width: auto;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .skeleton.header.v3 .header__main{
+    padding: 18px 12px 18px 6px;
+        gap: 8px;
+  }
+}
+
+            
+:root {
+  --skeleton-height: 56px;
+}
+
+.skeleton.header {
+  width: 100%;
+  z-index: var(--z-index-9);
+}
+
+.skeleton.main-header {
+  display: grid;
+  background-color: var(--app-header-background, #ccc);
+  padding: var(--spacing-padding-small,3px) var(--spacing-padding-large,16px) var(--spacing-padding-large,16px) var(--spacing-padding-xlarge,24px);
+  grid-template-columns: 172px 150px auto 180px 35px;
+  grid-template-rows: 16px var(--skeleton-height,56px);
+  grid-template-areas:
+    'help help help help help'
+    'logo mainMenuBtn search user cart';
+  grid-column-gap: var(--spacing-margin-small);
+}
+
+.skeleton.sub-header {
+  background-color: var(--app-subheader-background-mobile, #fff);
+  height: 40px;
+  box-shadow: var(--shadow-boxShadow);
+}
+
+.skeleton.main-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+}
+.skeleton.logo__img {
+  object-fit: contain;
+  height: 60px;
+  width: 100%;
+  max-width: 160px;
+}
+.skeleton.helper {
+  height: 16px;
+  grid-area: help;
+}
+.skeleton.logo {
+  grid-area: logo;
+}
+.skeleton.categories {
+  grid-area: mainMenuBtn;
+  height: var(--skeleton-height,56px);
+}
+.skeleton.search {
+  grid-area: search;
+  height: var(--skeleton-height,56px);
+}
+.skeleton.user {
+  grid-area: user;
+  height: var(--skeleton-height,56px);
+}
+.skeleton.cart {
+  grid-area: cart;
+  height: var(--skeleton-height,56px);
+  width: 48px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+      --skeleton-height: 24px;
+  }
+  .skeleton.main-header {
+    padding: var(--spacing-padding-large,16px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 24px;
+    grid-template-areas:
+    'mainMenuBtn search user cart';
+  }
+  .skeleton.helper {
+    display: none;
+  }
+  .skeleton.logo {
+    display: none;
+  }
+}
+
+
+          }</style><script src="MAKRO.js" async onload="fireFunc()"></script><script>const anlyCu = JSON.parse(sessionStorage.getItem('anly_cu'),'{}');
+
+let dlc = document.location.href;
+let drcf = document.referrer;
+
+if(anlyCu?.drcf){
+  console.log("🚀 ~ file: ScriptPersistDocRefLoc.js:11 ~ anlyCu:", anlyCu)
+  dlc = anlyCu.dlc;
+  drcf = anlyCu.drcf;
+}
+
+const all_data = { dlc, drcf};
+const anly_cu = JSON.stringify(all_data);
+
+sessionStorage.setItem('anly_cu', anly_cu);
+
+setTimeout(() => {
+  sessionStorage.removeItem('anly_cu');
+}, 3000);</script><script>(function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+        });
+        w[l].push({event:'set', 'referrer':drcf}); // now send document referrer from session storage
+        w[l].push({event:'set', 'page':dlc});
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        j.onerror = function() {
+          w[l].push({
+            'gtm.instaleap.error': new Date().getTime(),
+            message:
+              'This is controlled, it occurs when the GTM library is not loaded',
+          });
+        };
+        f.parentNode.insertBefore(j, f);
+      })(
+        window,
+        document,
+        'script',
+        'dataLayer',
+        'GTM-N3GXVRZ'
+      );</script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MT6WT49P"></script><script>(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "h9lfyapbx0");</script><script>window.onerror = function(message, url, line, column, error) {
+        console.log(message, url, line, column, error);
+      };</script><meta name="version" content="3.46.9" data-react-helmet><meta name="theme-color" content="#D22730"><meta name="google-site-verification" content="q1ZMJYkkJ3RcWbZgtSDBVJtGU9LdTKmFzCWP2i7zTAM"><meta name="google-site-verification" content="9ADfNHc20xNpHIJX86jkURKOCkHXxPA-kGjbj11l7Xo"><meta name="google-site-verification" content="g6QGhDh88EBqc_MdEj2YkRS8bIGqXkhKNZH7knzBnlk"><meta name="facebook-domain-verification" content="561148901797310"><meta name="keywords" content="Makro, Mercado de Ofertas, Ofertas de mercado, Mercado en Makro, Domicilio de tienda, Descuentos comida, Supermercado Makro, Makro Supermayorista, Tienda a domicilio, Makro productos, Makro domicilios, Domicilios de mercado, Tienda Makro, Recoge en tienda, Mercado, Pedir mercado a domicilio, Makro Bogotá, Compras online Makro, Recoge en tienda" data-react-helmet><meta name="description" content="Conviértete en un Dueño del Ahorro con solo un clic. Compra por unidad o cantidad, sin pasaportes ni membresías. Recoge en tienda o recibe directamente en la puerta de tu casa." data-react-helmet><script defer="defer" src="/runtime0fc29d6e2ecd2818b946.js"></script><script defer="defer" src="/2613dcdb4a850c94af6b1467.js"></script><script defer="defer" src="/48932a5fa7d1c5f495e37b21.js"></script><script defer="defer" src="/app682ad5ac44cb414721d5.js"></script><script defer="defer" src="/react-vendors54eb4c74691d15593d27.js"></script><script defer="defer" src="/phosphor6d7dfdf68366349ca377.js"></script></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3GXVRZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="app"><div class="skeleton pre-app"><div class="skeleton header v2"><div class="skeleton main-header"><div class="skeleton helper"></div><div class="skeleton logo"><img class="skeleton logo__img" src="https://ecommerce-image-catalog.s3.amazonaws.com/Manuel+leon/Makro/Logo_7230/Logo+tienda.makro.png" alt=" logo"></div><div class="skeleton categories"></div><div class="skeleton search"></div><div class="skeleton user"></div><div class="skeleton cart"></div></div><div class="skeleton sub-header"></div></div><div class="skeleton main-loader"><img src="cart.png" width="192" height="176" alt=""/></div></div></div></body></html>
